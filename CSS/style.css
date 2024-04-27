@@ -19,10 +19,6 @@
     --button-border-radius: 10px;
 
     --background-overlay: rgba(0,0,0,0.35);
-    /* --background-image: url('../Images/backgrounds/edgerunners.jpg'); */
-    /* --background-image: url('https://c4.wallpaperflare.com/wallpaper/261/605/242/cyberpunk-2077-cyberpunk-edgerunners-david-martinez-edgerunners-lucy-edgerunners-hd-wallpaper-preview.jpg'); */
-    /* --background-image: url('https://i.pximg.net/img-master/img/2022/10/04/22/31/32/101688803_p0_master1200.jpg'); */
-    /* --background-image: linear-gradient(15deg, #990000, #ff0080); */
     --background-image: url('../Images/backgrounds/katanawoman.png');
 
     --section-width: max-content;
@@ -32,6 +28,15 @@
     --section-padding: 24px;
     --section-border-radius: 10px;
     --section-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+
+    --card-box-width: 320px;
+    --card-box-height: 120px;
+    --card-box-background: rgba(255,255,255,0.2);
+    --card-box-text: var(--text-color);
+    --card-box-padding: 24px;
+    --card-box-border-radius: 10px;
+    --card-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 @font-face {
@@ -96,6 +101,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--gap-small);
+
+    width: 745px;
+    height: 300px;
 }
 
 .flex-column {
@@ -105,6 +113,10 @@ body {
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+.flex-row-centered {
+    align-content: center;
+    justify-content: center;
 }
 
 
@@ -121,13 +133,38 @@ img {
 br {
     user-select: none;
 }
+.spacing {
+    user-select: none;
+    color: #fcb652;
+}
+.subtitle {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
 
-a {
+a:not(.nav-item) {
     color: var(--main-text-color);
+    text-decoration: underline;
 }
 a:hover {
     cursor: pointer;
 }
-a:visited {
-    color: var(--main-text-color);
+
+.nav-item {
+    color: #fcb652;
+}
+
+
+
+.card-box {
+    width: var(--card-box-width);
+    height: var(--card-box-height);
+    background: var(--card-box-background);
+
+    padding: var(--card-box-padding);
+    border-radius: var(--card-box-border-radius);
+    box-shadow: var(--card-box-shadow);
+
+    height: 70px;
 }
