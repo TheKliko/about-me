@@ -1,6 +1,5 @@
 :root {
-    background: #cc0037;
-    background: linear-gradient(15deg, #990029, #f20041) no-repeat;
+    --background: linear-gradient(15deg, #990029, #f20041) no-repeat;
 
     /* variables */
     --main-content-width: 1280px;
@@ -29,6 +28,7 @@ body {
     justify-items: center;
     align-items: center;
     font-family: 'Monsterrat';
+    background: var(--background);
 }
 
 h1 {
