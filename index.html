@@ -3,44 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheKliko</title>
+    <title>TheKliko | About</title>
     <link rel="shortcut icon" href="Images/logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JavaScript/main.js"></script>
-
-    <!-- <meta property="og:site_name" content="thekliko.github.io/about">
-    <meta property="og:title" content="TheKliko">
-    <meta property="og:description" content="View my projects.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/TheKliko/about/main/Images/logo/logo.png">
-    <meta property="og:url" content="https://thekliko.github.io/about">
-    <meta property="og:type" content="website"> -->
 </head>
 <body>
-    <section id="main-content" style="gap: var(--gap-large);">
-        <section class="section flex-column">
-            <div style="display: flex; justify-content: center; align-items: center; gap: var(--gap-small);">
-                <img src="Images/logo/logo.png" alt="profile picture" style="width: 48px; height: 48px;">
-                <h2>
-                    TheKliko
-                </h2>
+    <div id="main-content">
+        <div id="left-side" style="align-self: center; justify-self: center; user-select: none;">
+            <a href="Images/logo/pfp.png" target="_blank" download="TheKliko">
+                <img src="Images/logo/pfp.png" alt="TheKliko">
+            </a>
+        </div>
+        <div id="right-side">
+            <div id="about-me">
+                <h1>TheKliko</h1>
+                <p>
+                    Hello I am TheKliko and I made this website.
+                </p>
             </div>
-        </section>
 
-        <section class="section flex-row flex-row-centered" style="gap: 10px;">
-            <a href="#" aria-current="page" class="nav-item" style="color: #fff;">About me</a>
-            <p class="spacing">|</p>
-            <a href="projects.html" class="nav-item">My projects</a>
-        </section>
+            <div>
+                <h2>About me</h2>
+                <p>
 
-        <section>
-            <h3 style="margin-bottom: 5px;">About Me</h3>
-            <p>Hello I am Kliko and I like programming and videogames.</p>
-            <h3 style="margin-top: 16px; margin-bottom: 5px;">Interests</h3>
-            <p>Programming: Python, HTML/CSS/JS.</p>
-            <p>Videogames: souls-likes, story games and Roblox games.</p>
-            <p>Swords: My favourite sword is the rapier.</p>
-            <p>Fencing: No HEMA club nearby so I do olympic fencing.</p>
-        </section>
-    </section>
+                </p>
+
+                <p class="project-title">
+                    Interests
+                </p>
+                <ul>
+                    <li>
+                        Programming (Python)
+                    </li>
+                    <li>
+                        Fencing
+                    </li>
+                    <li>
+                        Star Wars
+                    </li>
+                    <li>
+                        Videogames
+                    </li>
+                    <li>
+                        Anime
+                    </li>
+                    <li>
+                        Swords
+                    </li>
+                </ul>
+                <div>
+                    <p class="project-title" style="margin-top: 12px;">
+                        Other
+                    </p>
+                    <ul>
+                        <li>
+                            Location: Netherlands<span style="user-select: none;"> <img src="Images/other/flag-netherlands_1f1f3-1f1f1.png" alt="" style="height: 0.96rem;"></span>
+                        </li>
+                        <li>
+                            Timezone: <span id="timezone"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="align-self: flex-end;">
+                <h2>My Projects</h2>
+                <div id="projects">
+                    <a href="https://thekliko.github.io/klikos-modloader/" target="_blank">
+                        <div class="project">
+                            <p class="project-title">Kliko's modloader<span></p>
+                            <p class="project-description">An open-source modloader for Roblox</p>
+                        </div>
+                    </a>
+                    <a href="https://thekliko.github.io/klikos-modloader/" target="_blank">
+                        <div class="project">
+                            <p class="project-title">YouTube video viewer</p>Watch YouTube videos without distractions</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
