@@ -92,7 +92,8 @@ a:hover {
     width: calc(419.34px - 2* var(--card-box-padding));
     height: calc(232.02px - 2* var(--card-box-padding));
     
-    background: var(--main-content-background);
+    background: #0000;
+    backdrop-filter: blur(5px);
     padding: 16px;
     border-radius: 8px;
     box-shadow: var(--main-content-box-shadow);
