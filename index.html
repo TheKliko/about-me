@@ -4,82 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheKliko | About</title>
-    <link rel="shortcut icon" href="Images/logo/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
-    <script src="JavaScript/main.js"></script>
+    <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
-    <div id="main-content">
-        <div id="left-side" style="align-self: center; justify-self: center; user-select: none;">
-            <a href="Images/logo/pfp.png" target="_blank" download="TheKliko">
-                <img src="Images/logo/pfp.png" alt="TheKliko">
+    <div id="card">
+        <div id="left">
+            <a class="hover-grow" href="images/logo/pfp.png" target="_blank">
+                <img src="images/logo/pfp.png" alt="TheKliko">
             </a>
         </div>
-        <div id="right-side">
-            <div id="about-me">
+        <div id="right">
+            <div id="header">
                 <h1>TheKliko</h1>
-                <p>
-                    Hello I am TheKliko and I made this website.
-                </p>
+                <p>Hello I am TheKliko and I made this website.</p>
             </div>
 
             <div>
-                <h2>About me</h2>
-                <p>
-
-                </p>
-
-                <p class="project-title">
-                    Interests
-                </p>
-                <ul>
-                    <li>
-                        Programming (Python)
-                    </li>
-                    <li>
-                        Fencing
-                    </li>
-                    <li>
-                        Star Wars
-                    </li>
-                    <li>
-                        Videogames
-                    </li>
-                    <li>
-                        Anime
-                    </li>
-                    <li>
-                        Swords
-                    </li>
-                </ul>
+                <h2>About Me</h2>
                 <div>
-                    <p class="project-title" style="margin-top: 12px;">
-                        Other
-                    </p>
+                    <b>Interests:</b>
                     <ul>
                         <li>
-                            Location: Netherlands<span style="user-select: none;"> <img src="Images/other/flag-netherlands_1f1f3-1f1f1.png" alt="" style="height: 0.96rem;"></span>
+                            Star Wars
                         </li>
                         <li>
-                            Timezone: <span id="timezone"></span>
+                            Swords / Fencing
+                        </li>
+                        <li>
+                            Programming (Python)
+                        </li>
+                        <li>
+                            Videogames + Anime
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <b>Other:</b>
+                    <ul>
+                        <li>
+                            <p>Location: Netherlands <span><img id="location-image" src="images/location/flag-netherlands_1f1f3-1f1f1.png" alt=""></span></p>
+                        </li>
+                        <li>
+                            <p>Timezone: <span id="timezone-indicator">timezone</span></p>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div style="align-self: flex-end;">
+            <div>
                 <h2>My Projects</h2>
                 <div id="projects">
-                    <a href="https://thekliko.github.io/klikos-modloader/" target="_blank">
-                        <div class="project">
-                            <p class="project-title">Kliko's modloader<span></p>
-                            <p class="project-description">An open-source modloader for Roblox</p>
-                        </div>
+                    <a class="project hover-grow" href="https://thekliko.github.io/klikos-modloader/" target="_blank">
+                        <p class="project-title">Kliko's modloader</p>
+                        <p>An open-source modloader for Roblox.</p>
                     </a>
-                    <a href="https://thekliko.github.io/youtube-video-viewer/" target="_blank">
-                        <div class="project">
-                            <p class="project-title">YouTube video viewer</p>Watch YouTube videos without distractions</p>
-                        </div>
+                    <a class="project hover-grow" href="https://thekliko.github.io/youtube-video-viewer/" target="_blank">
+                        <p class="project-title">YouTube Video Viewer</p>
+                        <p>Watch YouTube videos without distractions.</p>
                     </a>
                 </div>
             </div>
